@@ -3,7 +3,7 @@ import { navLinks } from "../../Data";
 import { socialIcons } from "../../Data";
 import "./Navbar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = () => {
     <div className="header">
       <div className="Nav_container">
         <div className="logo">
-          <h3>A</h3>
+          <img src="favicon.ico" alt="icon" />
         </div>
         <ul className="nav_links">
           {navLinks.map((navlink, index) => {
