@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { navLinks } from "../../Data";
 import { socialIcons } from "../../Data";
 import "./Navbar.scss";
@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
   const menuVariants = {
     hidden: {
@@ -35,8 +36,14 @@ const Navbar = () => {
     },
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 20);
+    });
+  }, []);
+
   return (
-    <div className="header">
+    <div className={scroll ? "header active" : "header"}>
       <div className="Nav_container">
         <div className="logo">
           <img src="favicon.ico" alt="icon" />
