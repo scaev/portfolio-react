@@ -12,7 +12,12 @@ import work6 from "./assets/work6.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"]
 
-
+export const socialIcons = [
+  <FaDribbble />,
+  <FaInstagram />,
+  <FaLinkedin />,
+  <BsMedium />
+]
 
 export const bios = [
   {

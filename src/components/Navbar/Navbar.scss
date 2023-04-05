@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7rem 1.5rem 0 1.5rem;
+    padding: 1.2rem 2rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -24,6 +24,26 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
+    }
+    .nav_links {
+      display: flex;
+      list-style: none;
+
+      li {
+        margin-left: 3rem;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 0.85rem;
+          opacity: 0.6;
+          transition: 0.3s;
+          &:hover {
+            opacity: 1;
+         }
+        }
+      }
     }
   }
 }
