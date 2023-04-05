@@ -11,8 +11,9 @@ const About = () => {
         <h1>About Me</h1>
       </div>
       <div className="about_container">
-        <div className="about_left"></div>
-        <img src={portfolio2} alt="about-img" />
+        <div className="about_left">
+          <img src={portfolio2} alt="about-img" />
+        </div>
         <div className="about_right">
           <p>
             I'm a software and mechanical engineer with a passion for building
@@ -20,15 +21,20 @@ const About = () => {
             bring a unique perspective to problem-solving and have a track
             record of delivering innovative solutions.
           </p>
-          {bios.map(bio => {
+          {bios.map((bio) => {
             return (
               <div className="bio" key={bio.id}>
-                <span className="biokey">{bio.icon}{bio.key}</span>
-                <span className="bioValue">{bioValue}</span>
+                <span className="biokey">
+                  {bio.icon}
+                  {bio.key}
+                </span>
+                <span className="bioValue">{bio.value}</span>
               </div>
-            )
+            );
           })}
-          <a href="#" download="">Download Resume ⇩</a>
+          <a href="#" download="">
+            Download Resume
+          </a>
         </div>
       </div>
     </div>
