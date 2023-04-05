@@ -29,6 +29,10 @@
       display: flex;
       list-style: none;
 
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+
       li {
         margin-left: 3rem;
 
@@ -41,7 +45,28 @@
           transition: 0.3s;
           &:hover {
             opacity: 1;
-         }
+          }
+        }
+      }
+    }
+    .social_icons {
+      display: flex;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+      div {
+        margin-left: 1rem;
+
+        svg {
+          cursor: pointer;
+          color: #fff;
+          opacity: 0.6;
+          transition: 0.3s;
+          z-index: 5;
+
+          &:hover {
+            opacity: 1;
+          }
         }
       }
     }
