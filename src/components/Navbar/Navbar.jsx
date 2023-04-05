@@ -1,9 +1,13 @@
 import React from "react";
 import { navLinks } from "../../Data";
+import { socialIcons } from '../../Data';
+import "./Navbar.scss";
+
+
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="header">
       <div className="Nav_container">
         <div className="logo">
           <h3>A</h3>
@@ -16,7 +20,16 @@ const Navbar = () => {
               </li>
             );
           })}
-        </ul>
+              </ul>
+              <div className="social_icons" >
+                  {socialIcons.map((socialIcon, index) => {
+                  return (
+                      <div key={index}>
+                          {socialIcon}
+                      </div>
+                  )
+              })}
+              </div>
       </div>
     </div>
   );

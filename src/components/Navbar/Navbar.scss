@@ -1,1 +1,29 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
 
+  .Nav_container {
+    position: relative;
+    max-width: 1224px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 1.5rem 0 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    .logo {
+      background: #fff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
