@@ -18,10 +18,13 @@ const Home = () => {
           <br /> to craft innovative <br /> web products.
         </span>
         <a href="contact">connect with me</a>
-        <div className="web">Web Developer</div>
+        <div className="fullstack">Full-Stack Developer</div>
         <div className="ui">UI/UX Designer</div>
         <div className="mecengineer">Mechanical Engineer</div>
+        <div className="freelancer">Freelancer</div>
       </div>
     </div>
   );
 };
+
+export default Home;
