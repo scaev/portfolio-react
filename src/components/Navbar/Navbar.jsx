@@ -3,7 +3,7 @@ import { navLinks } from "../../Data";
 import { socialIcons } from "../../Data";
 import "./Navbar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
-import { Variant, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -68,7 +68,11 @@ const Navbar = () => {
           initial="hidden"
           animate={toggle ? "visible" : "hidden"}
         ></motion.div>
-        <motion.div className="menuX">
+        <motion.div
+          className="menuX"
+          variants={navLinkVariants}
+          animate={toggle ? "visible" : "hidden"}
+        >
           <HiX onClick={() => setToggle(false)} />
           {navLinks.map((navlink, index) => {
             return (
