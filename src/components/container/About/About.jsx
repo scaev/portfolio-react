@@ -2,6 +2,9 @@ import React from "react";
 import "./About.scss";
 import portfolio2 from "../../../assets/portfolio2.png";
 import { bios } from "../../../Data";
+import { motion } from "framer-motion";
+import Tilt from 'react-parallax-tilt';
+
 
 const About = () => {
   return (
@@ -12,7 +15,10 @@ const About = () => {
       </div>
       <div className="about_container">
         <div className="about_left">
-          <img src={portfolio2} alt="about-img" />
+          <img
+            src={portfolio2}
+            alt="about-img"
+          />
         </div>
         <div className="about_right">
           <p>
@@ -32,9 +38,14 @@ const About = () => {
               </div>
             );
           })}
-          <a href="#" download="">
+          <motion.a
+            href="#"
+            download=""
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          >
             Download Resume
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import portfolio from "../../../assets/portfolio.jpg";
 import "./Home.scss";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -17,7 +18,13 @@ const Home = () => {
           Passionate
           <br /> to craft innovative <br /> web products.
         </span>
-        <a href="contact">connect with me</a>
+        <motion.a
+          href="contact"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+        >
+          connect with me
+        </motion.a>
         <div className="fullstack">Full-Stack Developer</div>
         <div className="ui">UI/UX Designer</div>
         <div className="mecengineer">Mechanical Engineer</div>
