@@ -1,0 +1,22 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    button {
+        color: #000;
+        background: #fff;
+        padding: 0.65rem 1rem;
+        border-radius: 10px;
+        font-size: 0.85rem;
+        text-transform: capitalize;
+        cursor: pointer;
+        border: none;
+        margin-top: 1rem;
+        font-family: "Poppins";
+        
+
+       
+    }
+}

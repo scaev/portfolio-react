@@ -17,7 +17,7 @@ const Navbar = () => {
       scale: 50,
       transition: {
         type: "tween",
-        duration: 0.5,
+        duration: 0.4,
       },
     },
   };

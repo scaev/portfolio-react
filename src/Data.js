@@ -84,45 +84,6 @@ export const icons = [
   <SiAdobephotoshop />,
 ];
 
-export const workImages = [
-  {
-    id: 1,
-    img: work1,
-    name: "Slot Game",
-    category: "web",
-  },
-  {
-    id: 2,
-    img: work2,
-    name: "Event Library",
-    category: "app",
-  },
-  {
-    id: 3,
-    img: work3,
-    name: "eAuctions",
-    category: "app",
-  },
-  {
-    id: 4,
-    img: work4,
-    name: "Time Capsule",
-    category: "app",
-  },
-  {
-    id: 5,
-    img: work5,
-    name: "Code Mate",
-    category: "app",
-  },
-  {
-    id: 6,
-    img: work6,
-    name: "Old Portfolio",
-    category: "design",
-  },
-];
-
 export const workNavs = ["All", "Web", "App", "Design"];
 
 export const contacts = [
@@ -184,5 +145,44 @@ export const finishes = [
     id: 3,
     number: "65+",
     itemName: "Designed Projects",
+  },
+];
+
+export const workImages = [
+  {
+    id: 1,
+    img: work1,
+    name: "Slot Game",
+    category: "web",
+  },
+  {
+    id: 2,
+    img: work2,
+    name: "Event Library",
+    category: "app",
+  },
+  {
+    id: 3,
+    img: work3,
+    name: "eAuctions",
+    category: "app",
+  },
+  {
+    id: 4,
+    img: work4,
+    name: "Time Capsule",
+    category: "app",
+  },
+  {
+    id: 5,
+    img: work5,
+    name: "Code Mate",
+    category: "app",
+  },
+  {
+    id: 6,
+    img: work6,
+    name: "Old Portfolio",
+    category: "design",
   },
 ];
