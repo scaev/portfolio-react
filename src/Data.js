@@ -3,8 +3,10 @@ import {
   FaCss3,
   FaNodeJs,
   FaReact,
+  FaJs,
   FaSass,
   FaFigma,
+  FaPython,
   FaPhoneAlt,
   FaUser,
   FaMapMarkerAlt,
@@ -13,19 +15,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-// import {
-//   faCss3,
-//   faGithub,
-//   faHtml5,
-//   faJs,
-//   faMdb,
-//   faNode,
-//   faPython,
-//   faReact,
-//   faChrome,
-// } from "@fortawesome/free-brands-svg-icons";
-import { DiJavascript } from "react-icons/di";
-import { SiTypescript } from "react-icons/si";
+import { SiBlender, SiMongodb, SiTypescript } from "react-icons/si";
 import { BsTwitter } from "react-icons/bs";
 import portfolio from "./assets/portfolio.jpg";
 import work1 from "./assets/work1.png";
@@ -66,14 +56,18 @@ export const bios = [
 ];
 
 export const icons = [
-  <FaHtml5 />,
   <FaCss3 />,
-  <DiJavascript />,
-  <SiTypescript />,
-  <FaReact />,
+  <FaGithub />,
+  <FaHtml5 />,
+  <FaJs />,
+  <SiMongodb />,
   <FaNodeJs />,
-  <FaSass />,
+  <FaPython />,
   <FaFigma />,
+  <FaReact />,
+  <FaSass />,
+  <SiTypescript />,
+  <SiBlender />,
 ];
 
 export const workImages = [
@@ -135,15 +129,23 @@ export const contacts = [
   },
 ];
 
-// export const icons = [
-//   <faCss3 />,
-//   <faGithub />,
-//   <faHtml5 />,
-//   <faJs />,
-//   <faMdb />,
-//   <faNode />,
-//   <faPython />,
-//   <FaFigma />,
-//   <faReact />,
-//   <FaSass />,
-// ];
+export const experiences = [
+  {
+    id: 1,
+    year: "2022-2023",
+    position: "Full-Stack Development",
+    company: "General Assembly",
+  },
+  {
+    di: 2,
+    year: "2020-2022",
+    position: "Full-Stack Development",
+    company: "Udemy, FreeCodeCamp ",
+  },
+  {
+    id: 3,
+    year: "2019-2022",
+    position: "R&D Engineer – Mechanical Design",
+    company: "IQ Elevators Inc.",
+  },
+];

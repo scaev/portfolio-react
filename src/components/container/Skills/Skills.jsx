@@ -22,7 +22,7 @@ const Skills = () => {
           onClick={() => setActive(2)}
           className={active === 2 ? "active" : ""}
         >
-          Experiences
+          Education & Experience
         </button>
       </div>
       <div className="skills">
