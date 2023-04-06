@@ -1,0 +1,23 @@
+.select {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+
+  button {
+    color: #000;
+    background: #fff;
+    padding: 0.65rem 1rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+    font-family: "Poppins";
+
+    &.active {
+      background: #8c12f0;
+      color: #fff;
+    }
+  }
+}
