@@ -14,8 +14,18 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
+  FaBootstrap,
 } from "react-icons/fa";
-import { SiBlender, SiMongodb, SiTypescript } from "react-icons/si";
+import { DiMaterializecss } from "react-icons/di";
+import {
+  SiBlender,
+  SiMongodb,
+  SiTypescript,
+  SiMui,
+  SiAmazonaws,
+  SiAdobephotoshop,
+  SiPostgresql,
+} from "react-icons/si";
 import { BsTwitter } from "react-icons/bs";
 import portfolio from "./assets/portfolio.jpg";
 import work1 from "./assets/work1.png";
@@ -57,7 +67,6 @@ export const bios = [
 
 export const icons = [
   <FaCss3 />,
-  <FaGithub />,
   <FaHtml5 />,
   <FaJs />,
   <SiMongodb />,
@@ -68,6 +77,11 @@ export const icons = [
   <FaSass />,
   <SiTypescript />,
   <SiBlender />,
+  <SiMui />,
+  <FaBootstrap />,
+  <DiMaterializecss />,
+  <SiAmazonaws />,
+  <SiAdobephotoshop />,
 ];
 
 export const workImages = [
@@ -147,5 +161,11 @@ export const experiences = [
     year: "2019-2022",
     position: "R&D Engineer – Mechanical Design",
     company: "IQ Elevators Inc.",
+  },
+  {
+    id: 4,
+    year: "2017-2019",
+    position: "R&D Design Engineer ",
+    company: "Unlu Agriculture",
   },
 ];
