@@ -1,32 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import "./Projects.scss";
 import { workNavs } from "../../../Data";
-import { workImages } from '../../../Data';
-import {FiGithub, FiEye} from "react-icons/fi"
-
+import { workImages } from "../../../Data";
+import { FiGithub, FiEye } from "react-icons/fi";
 
 const Projects = () => {
-    const [active, setActive] = useState(1)
-    return (
-        <div className="container" id='projects'>
-            <div className="title">
-                <span>My Work</span>
-                <h1>Projects</h1>
-            </div>
-            <div
-        className="buttons"
-      >
-        {workNavs.map((workNav ,index) => {
+  const [active, setActive] = useState(0);
+  const [tab, setTab] = useState({ name: "all" });
+  const [works, setWorks] = useState([]);
+
+  useEffect(() => {
+    if (tab.name === "all") {
+      setWorks(workImages);
+    } else {
+      const newWork = workImages.filter((workImage) => {
+        return workImage.category.toLowerCase() === tab.name;
+      });
+      setWorks(newWork);
+    }
+  }, [tab]);
+
+  const activeTab = (e, index) => {
+    setTab({ name: e.target.textContent.toLowerCase() });
+    setActive(index);
+  };
+
+  return (
+    <div className="container" id="projects">
+      <div className="title">
+        <span>My Work</span>
+        <h1>Projects</h1>
+      </div>
+      <div className="buttons">
+        {workNavs.map((workNav, index) => {
           return (
             <button
               onClick={(e) => activeTab(e, index)}
-              key={index}>{workNav}</button>
-          )
+              className={`${active === index ? "active" : ""}`}
+              key={index}
+            >
+              {workNav}
+            </button>
+          );
         })}
       </div>
     </div>
-       
-    );
+  );
 };
 
-export dedfault Projects;
+export default Projects;
