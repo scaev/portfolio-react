@@ -28,12 +28,24 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 
+  @media screen and (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+
   .workImage {
     max-width: 380px;
     height: 250px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+
+    @media screen and (max-width: 600px) {
+      max-width: 350px;
+    }
 
     img {
       width: 100%;
@@ -53,7 +65,6 @@
       gap: 1.5rem;
       justify-content: center;
       align-items: center;
-
     }
   }
 }

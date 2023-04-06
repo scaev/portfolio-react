@@ -45,19 +45,19 @@ const Projects = () => {
         })}
       </div>
       <div className="workImages">
-        {workImages.map((workImage) => {
+        {works.map((work) => {
           return (
-            <div className="workImage">
-              <img src={workImage.img} alt="work-image" />;
+            <div className="workImage" key={work.id}>
+              <img src={work.img} alt="workImg" />;
               <div className="hoverLayer">
                 <a href="#">
                   <FiGithub />
                 </a>
-                <a href="">
+                <a href="#">
                   <FiEye />
                 </a>
-                  </div>
-                  ;
+              </div>
+              ;
             </div>
           );
         })}
