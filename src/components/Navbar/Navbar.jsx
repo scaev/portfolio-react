@@ -52,7 +52,7 @@ const Navbar = () => {
           {navLinks.map((navlink, index) => {
             return (
               <li key={index}>
-                <a href={`${navlink}`}>{navlink}</a>
+                <a href={`#${navlink}`}>{navlink}</a>
               </li>
             );
           })}
@@ -84,7 +84,9 @@ const Navbar = () => {
           {navLinks.map((navlink, index) => {
             return (
               <li key={index}>
-                <a href={`${navlink}`}>{navlink}</a>
+                <a href={`#${navlink}`} onClick={() => setToggle(false)}>
+                  {navlink}
+                </a>
               </li>
             );
           })}
