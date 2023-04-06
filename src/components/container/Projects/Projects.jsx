@@ -44,6 +44,24 @@ const Projects = () => {
           );
         })}
       </div>
+      <div className="workImages">
+        {workImages.map((workImage) => {
+          return (
+            <div className="workImage">
+              <img src={workImage.img} alt="work-image" />;
+              <div className="hoverLayer">
+                <a href="#">
+                  <FiGithub />
+                </a>
+                <a href="">
+                  <FiEye />
+                </a>
+                  </div>
+                  ;
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

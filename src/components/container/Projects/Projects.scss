@@ -1,22 +1,59 @@
 .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 
-    button {
-        color: #000;
-        background: #fff;
-        padding: 0.65rem 1rem;
-        border-radius: 10px;
-        font-size: 0.85rem;
-        text-transform: capitalize;
-        cursor: pointer;
-        border: none;
-        margin-top: 1rem;
-        font-family: "Poppins";
-        
+  button {
+    color: #000;
+    background: #fff;
+    padding: 0.65rem 1rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+    font-family: "Poppins";
 
-       
+    &.active {
+      background: #8c12f0;
+      color: #fff;
     }
+  }
+}
+.workImages {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  .workImage {
+    max-width: 380px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hoverLayer {
+      background: #8c12f0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: center;
+
+    }
+  }
 }
