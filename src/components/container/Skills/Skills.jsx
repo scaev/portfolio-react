@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Skills.scss";
 import { icons } from "../../../Data";
 import { experiences } from "../../../Data";
+import { finishes } from "../../../Data";
 
 const Skills = () => {
   const [active, setActive] = useState(1);
@@ -46,6 +47,17 @@ const Skills = () => {
                   <h3>{experience.position}</h3>
                   <p>{experience.company}</p>
                 </div>
+              </div>
+            );
+          })}
+      </div>
+      <div className="finishes_container">
+        {active === 2 &&
+          finishes.map((finish) => {
+            return (
+              <div className="finishes" key={finish.id}>
+                <div className="number">{finish.number}</div>
+                <h4 className="item_name">{finish.itemName}</h4>
               </div>
             );
           })}

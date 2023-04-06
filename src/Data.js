@@ -169,3 +169,20 @@ export const experiences = [
     company: "Unlu Agriculture",
   },
 ];
+export const finishes = [
+  {
+    id: 1,
+    number: "3+",
+    itemName: "Years Of Experience",
+  },
+  {
+    id: 2,
+    number: "1K+",
+    itemName: "Coffee",
+  },
+  {
+    id: 3,
+    number: "65+",
+    itemName: "Designed Projects",
+  },
+];
