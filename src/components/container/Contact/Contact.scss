@@ -10,6 +10,10 @@
   gap: 2rem;
   overflow: hidden;
 
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+
   .contact_left_container {
     h3 {
       font-size: 1.5rem;

@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.scss";
 import { contacts } from "../../../Data";
 import { socialIcons } from "../../../Data";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -46,9 +47,13 @@ const Contact = () => {
           <div className="row">
             <textarea placeholder="message"></textarea>
           </div>
-          <div className="btn">
+          <motion.div
+            className="btn"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          >
             <a href="">Send</a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
