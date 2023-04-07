@@ -3,24 +3,33 @@ import "./About.scss";
 import portfolio2 from "../../../assets/portfolio2.png";
 import { bios } from "../../../Data";
 import { motion } from "framer-motion";
-import Tilt from 'react-parallax-tilt';
-
 
 const About = () => {
   return (
     <div className="container" id="about">
-      <div className="title">
+      <motion.div
+        className="title"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [50, 0], opacity: 1 }}
+      >
         <span>Who Am I?</span>
         <h1>About Me</h1>
-      </div>
+      </motion.div>
       <div className="about_container">
-        <div className="about_left">
-          <img
-            src={portfolio2}
-            alt="about-img"
-          />
-        </div>
-        <div className="about_right">
+        <motion.div
+          className="about_left"
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [-250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <img src={portfolio2} alt="about-img" />
+        </motion.div>
+        <motion.div
+          className="about_right"
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <p>
             I'm a software and mechanical engineer with a passion for building
             and improving systems. With a strong foundation in both fields, I
@@ -46,7 +55,7 @@ const About = () => {
           >
             Download Resume
           </motion.a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

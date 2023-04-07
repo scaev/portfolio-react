@@ -30,15 +30,17 @@ const Projects = () => {
     <div className="container" id="projects">
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ y: [-50, 0], opacity: 1 }}
+        whileInView={{ y: [65, 0], opacity: 1 }}
         className="title"
       >
         <span>My Work</span>
         <h1>Projects</h1>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ y: [-50, 0], opacity: 1 }}
+        initial={{ x: 0, opacity: 0 }}
+        whileInView={{ x: [-250, 0], opacity: 1 }}
+        transition={{ duration: 1 }}
+        exit={{ opacity: 0, y: -50 }}
         className="buttons"
       >
         {workNavs.map((workNav, index) => {
@@ -55,14 +57,21 @@ const Projects = () => {
       </motion.div>
       <motion.div
         initial={{ x: 0, opacity: 0 }}
-        whileInView={{ x: [-250, 0], opacity: 1 }}
+        whileInView={{ y: [150, 0], opacity: 1 }}
         transition={{ duration: 1 }}
-        exit={{ opacity: 0, y: -50 }}
+        exit={{ opacity: 0, x: -50 }}
         className="workImages"
       >
         {works.map((work) => {
           return (
-            <div className="workImage" key={work.id}>
+            <motion.div
+              className="workImage"
+              key={work.id}
+              initial={{ x: 0, opacity: 0 }}
+              whileInView={{ y: [150, 0], opacity: 1 }}
+              transition={{ duration: 1 }}
+              exit={{ opacity: 0, x: -50 }}
+            >
               <img src={work.img} alt="workImg" />
               <motion.div
                 initial={{ opacity: 0 }}
@@ -88,7 +97,7 @@ const Projects = () => {
                   <FiEye />
                 </motion.a>
               </motion.div>
-            </div>
+            </motion.div>
           );
         })}
       </motion.div>

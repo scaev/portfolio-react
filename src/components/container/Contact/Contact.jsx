@@ -7,12 +7,21 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <div className="container" id="contact">
-      <div className="title">
+      <motion.div
+        className="title"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [50, 0], opacity: 1 }}
+      >
         <span>Get in touch</span>
         <h1>Contact Me</h1>
-      </div>
+      </motion.div>
       <div className="contact_form">
-        <div className="contact_left_container">
+        <motion.div
+          className="contact_left_container"
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [-150, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <h3>Just Say Hi!</h3>
           <p className="contact_text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
@@ -33,8 +42,13 @@ const Contact = () => {
               return <div key={index}>{socialIcon}</div>;
             })}
           </div>
-        </div>
-        <div className="contact_right">
+        </motion.div>
+        <motion.div
+          className="contact_right"
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <h3>Get In Touch</h3>
           <div className="row">
             <input type="text" placeholder="First Name" />
@@ -54,7 +68,7 @@ const Contact = () => {
           >
             <a href="">Send</a>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
