@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.scss";
 import { contacts } from "../../../Data";
+import { socialIcons } from "../../../Data";
 
 const Contact = () => {
   return (
@@ -12,7 +13,7 @@ const Contact = () => {
       <div className="contact_form">
         <div className="contact_left_container">
           <h3>Just Say Hi!</h3>
-          <p>
+          <p className="contact_text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
             autem animi ea, quibusdam iusto dolorem sequi. Possimus a nisi
             laboriosam laudantium exercitationem, magnam perspiciatis facilis
@@ -33,21 +34,18 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact_right">
-                  <h3>Get In Touch</h3>
-                  <div className="row">
-                      <input type="text"
-                          placeholder="First Name" />
-                      <input type="text"
-                      placeholder="Last Name"/>
-                  </div>
-                  <div className="row">
-                      <input type="number" placeholder="Phone Number" />
-                      <input type="email"
-                          placeholder="Email" />
-                  </div>
-                  <div className="row">
-                      <textarea placeholder="message"></textarea>
-                  </div>
+          <h3>Get In Touch</h3>
+          <div className="row">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <div className="row">
+            <input type="number" placeholder="Phone Number" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <div className="row">
+            <textarea placeholder="message"></textarea>
+          </div>
         </div>
       </div>
     </div>
