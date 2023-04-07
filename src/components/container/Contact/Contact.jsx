@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="container" id="contact">
       <div className="title">
-        <span>get in touch</span>
+        <span>Get in touch</span>
         <h1>Contact Me</h1>
       </div>
       <div className="contact_form">
@@ -32,7 +32,26 @@ const Contact = () => {
             })}
           </div>
         </div>
+        <div className="contact_right">
+                  <h3>Get In Touch</h3>
+                  <div className="row">
+                      <input type="text"
+                          placeholder="First Name" />
+                      <input type="text"
+                      placeholder="Last Name"/>
+                  </div>
+                  <div className="row">
+                      <input type="number" placeholder="Phone Number" />
+                      <input type="email"
+                          placeholder="Email" />
+                  </div>
+                  <div className="row">
+                      <textarea placeholder="message"></textarea>
+                  </div>
+        </div>
       </div>
     </div>
   );
 };
+
+export default Contact;
