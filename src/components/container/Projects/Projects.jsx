@@ -3,6 +3,7 @@ import "./Projects.scss";
 import { workNavs } from "../../../Data";
 import { workImages } from "../../../Data";
 import { FiGithub, FiEye } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const [active, setActive] = useState(0);
@@ -27,11 +28,19 @@ const Projects = () => {
 
   return (
     <div className="container" id="projects">
-      <div className="title">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        className="title"
+      >
         <span>My Work</span>
         <h1>Projects</h1>
-      </div>
-      <div className="buttons">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        className="buttons"
+      >
         {workNavs.map((workNav, index) => {
           return (
             <button
@@ -43,25 +52,46 @@ const Projects = () => {
             </button>
           );
         })}
-      </div>
-      <div className="workImages">
+      </motion.div>
+      <motion.div
+        initial={{ x: 0, opacity: 0 }}
+        whileInView={{ x: [-250, 0], opacity: 1 }}
+        transition={{ duration: 1 }}
+        exit={{ opacity: 0, y: -50 }}
+        className="workImages"
+      >
         {works.map((work) => {
           return (
             <div className="workImage" key={work.id}>
-              <img src={work.img} alt="workImg" />;
-              <div className="hoverLayer">
-                <a href="#">
+              <img src={work.img} alt="workImg" />
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: [0, 1] }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="hoverLayer"
+              >
+                <motion.a
+                  href="#"
+                  whileInView={{ scale: [0, 1] }}
+                  whileHover={{ scale: [1, 1.1] }}
+                  transition={{ duration: 0.3 }}
+                >
                   <FiGithub />
-                </a>
-                <a href="#">
+                </motion.a>
+
+                <motion.a
+                  href="#"
+                  whileInView={{ scale: [0, 1] }}
+                  whileHover={{ scale: [1, 1.1] }}
+                  transition={{ duration: 0.3 }}
+                >
                   <FiEye />
-                </a>
-              </div>
-              ;
+                </motion.a>
+              </motion.div>
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };
