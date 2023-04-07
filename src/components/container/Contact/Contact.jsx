@@ -46,6 +46,9 @@ const Contact = () => {
           <div className="row">
             <textarea placeholder="message"></textarea>
           </div>
+          <div className="btn">
+            <a href="">Send</a>
+          </div>
         </div>
       </div>
     </div>

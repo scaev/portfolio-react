@@ -35,7 +35,7 @@ import work4 from "./assets/work4.png";
 import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.png";
 
-export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
+export const navLinks = ["home", "about", "skills", "projects", "contact"];
 
 export const socialIcons = [
   <FaGithub />,
