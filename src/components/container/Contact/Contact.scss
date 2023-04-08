@@ -1,7 +1,7 @@
 .contact_form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: #fff;
+  background: #ececec;
   padding: 2rem;
   border-radius: 15px;
   max-width: 1100px;
@@ -31,7 +31,7 @@
       .icon {
         width: 50px;
         height: 50px;
-        background: #8c12f0;
+        background: #7fdbff;
         color: #fff;
         display: flex;
         justify-content: center;
@@ -99,7 +99,7 @@
 
     .btn {
       margin-top: 1rem;
-      background: #8c12f0;
+      background: #7fdbff;
       padding: 0.65rem 1rem;
       border-radius: 10px;
       font-size: 0.85rem;

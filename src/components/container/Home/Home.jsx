@@ -35,8 +35,8 @@ const Home = () => {
         </h3>
         <span className="job">Full-Stack Developer Based on Canada</span>
         <span className="text">
-          Passionate
-          <br /> to craft innovative <br /> web products.
+        Dedicated to creating
+          <br />  impactful digital products, <br /> brands, and experiences.
         </span>
         <motion.a
           href="contact"
