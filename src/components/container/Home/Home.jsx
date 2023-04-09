@@ -8,7 +8,8 @@ const Home = () => {
     animation: {
       y: [0, -15],
       transition: {
-        yoyo: Infinity,
+        repeat: Infinity,
+        repeatType: "reverse",
         duration: 2,
         delay: 1,
       },
@@ -35,11 +36,11 @@ const Home = () => {
         </h3>
         <span className="job">Full-Stack Developer Based on Canada</span>
         <span className="text">
-        Dedicated to creating
-          <br />  impactful digital products, <br /> brands, and experiences.
+          Dedicated to creating
+          <br /> impactful digital products, <br /> brands, and experiences.
         </span>
         <motion.a
-          href="contact"
+          href="#contact"
           variants={moveVariants}
           animate="animation"
           whileHover={{ scale: 1.1 }}

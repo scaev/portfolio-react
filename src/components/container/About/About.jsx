@@ -24,6 +24,16 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <img src={portfolio2} alt="about-img" />
+          <motion.div
+            className="text"
+            initial={{ x: 0, opacity: 0 }}
+            whileInView={{ x: [-250, 0], opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            Simplicity is the ultimate sophistication.
+            <br />
+            <span style={{ opacity: 0.4 }}>Leonardo da Vinci</span>
+          </motion.div>
         </motion.div>
         <motion.div
           className="about_right"

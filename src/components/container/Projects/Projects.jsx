@@ -70,17 +70,20 @@ const Projects = () => {
               initial={{ x: 0, opacity: 0 }}
               whileInView={{ y: [150, 0], opacity: 1 }}
               transition={{ duration: 1 }}
+              whileHover={{ scale: 1.03 }}
               exit={{ opacity: 0, x: -50 }}
             >
               <img src={work.img} alt="workImg" />
               <motion.div
                 initial={{ opacity: 0 }}
-                whileHover={{ opacity: [0, 1] }}
+                whileHover={{ opacity: [0.3, 0.8] }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="hoverLayer"
               >
                 <motion.a
-                  href="#"
+                  href={work.github}
+                  target="_blank"
+                  rel="noreferrer"
                   whileInView={{ scale: [0, 1] }}
                   whileHover={{ scale: [1, 1.1] }}
                   transition={{ duration: 0.3 }}
@@ -89,7 +92,9 @@ const Projects = () => {
                 </motion.a>
 
                 <motion.a
-                  href="#"
+                  href={work.deployed}
+                  target="_blank"
+                  rel="noreferrer"
                   whileInView={{ scale: [0, 1] }}
                   whileHover={{ scale: [1, 1.1] }}
                   transition={{ duration: 0.3 }}
