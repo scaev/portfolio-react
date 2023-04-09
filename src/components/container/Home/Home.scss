@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
 
-
   .profile {
     width: 110px;
     height: 110px;
@@ -21,6 +20,10 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    
+    .sphere {
+      position: absolute;
+    }
 
     h3 {
       color: #fff;

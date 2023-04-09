@@ -70,7 +70,7 @@ const Projects = () => {
               initial={{ x: 0, opacity: 0 }}
               whileInView={{ y: [150, 0], opacity: 1 }}
               transition={{ duration: 1 }}
-              whileHover={{ scale: 1.03 }}
+              whileHover={{ scale: 1.07 }}
               exit={{ opacity: 0, x: -50 }}
             >
               <img src={work.img} alt="workImg" />

@@ -5,6 +5,7 @@ import { bios } from "../../../Data";
 import { motion } from "framer-motion";
 import Resume from "../../../assets/Resume.pdf";
 
+
 const About = () => {
   return (
     <div className="container" id="about">
