@@ -78,22 +78,70 @@ export const bios = [
 ];
 
 export const icons = [
-  <FaCss3 />,
-  <FaHtml5 />,
-  <FaJs />,
-  <SiMongodb />,
-  <FaNodeJs />,
-  <FaPython />,
-  <FaFigma />,
-  <FaReact />,
-  <FaSass />,
-  <SiTypescript />,
-  <SiBlender />,
-  <SiMui />,
-  <FaBootstrap />,
-  <DiMaterializecss />,
-  <SiAmazonaws />,
-  <SiAdobephotoshop />,
+  {
+    icon: <FaCss3 />,
+    href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
+    icon: <FaHtml5 />,
+    href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    icon: <FaJs />,
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    icon: <SiMongodb />,
+    href: "https://www.mongodb.com",
+  },
+  {
+    icon: <FaNodeJs />,
+    href: "https://nodejs.org/en/docs/",
+  },
+  {
+    icon: <FaPython />,
+    href: "https://www.python.org/doc/",
+  },
+  {
+    icon: <FaFigma />,
+    href: "https://www.figma.com",
+  },
+  {
+    icon: <FaReact />,
+    href: "https://legacy.reactjs.org",
+  },
+  {
+    icon: <FaSass />,
+    href: "https://sass-lang.com",
+  },
+  {
+    icon: <SiTypescript />,
+    href: "https://www.typescriptlang.org",
+  },
+  {
+    icon: <SiBlender />,
+    href: "https://www.blender.org",
+  },
+  {
+    icon: <SiMui />,
+    href: "https://mui.com",
+  },
+  {
+    icon: <FaBootstrap />,
+    href: "https://getbootstrap.com",
+  },
+  {
+    icon: <DiMaterializecss />,
+    href: "https://materializecss.com/getting-started.html",
+  },
+  {
+    icon: <SiAmazonaws />,
+    href: "https://aws.amazon.com",
+  },
+  {
+    icon: <SiAdobephotoshop />,
+    href: "https://www.adobe.com/ca/products/photoshop.html",
+  },
 ];
 
 export const workNavs = ["All", "Web", "App", "Design"];

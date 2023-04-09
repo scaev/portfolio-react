@@ -40,14 +40,17 @@ const Skills = () => {
         {active === 1 &&
           icons.map((icon, index) => {
             return (
-              <motion.div
+              <motion.a
                 key={index}
                 className="tools"
                 initial={{ opacity: 0 }}
                 whileInView={{ y: [100, 0], opacity: 1 }}
+                href={icon.href}
+                target="_blank"
+                rel="noreferrer"
               >
-                {icon}
-              </motion.div>
+                {icon.icon}
+              </motion.a>
             );
           })}
       </div>
