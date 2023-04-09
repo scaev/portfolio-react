@@ -38,10 +38,22 @@ import work6 from "./assets/work6.png";
 export const navLinks = ["home", "about", "skills", "projects", "contact"];
 
 export const socialIcons = [
-  <FaGithub />,
-  <FaInstagram />,
-  <FaLinkedin />,
-  <BsTwitter />,
+  {
+    icon: <FaGithub />,
+    href: "https://github.com/scaev",
+  },
+  {
+    icon: <FaInstagram />,
+    href: "https://www.instagram.com/scaevolas/",
+  },
+  {
+    icon: <FaLinkedin />,
+    href: "https://www.linkedin.com/in/m-kaan-karadag/",
+  },
+  {
+    icon: <BsTwitter />,
+    href: "https://twitter.com/kenkara_",
+  },
 ];
 
 export const bios = [

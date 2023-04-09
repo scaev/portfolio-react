@@ -47,10 +47,11 @@
       display: flex;
       margin-top: 1rem;
 
-      div {
+      a {
         margin-right: 1rem;
         cursor: pointer;
         transition: all 0.3s ease;
+        color: #1f1f1f;
 
         &:hover {
           opacity: 0.8;
@@ -108,6 +109,7 @@
     button {
       appearance: none;
       border: none;
+      color: #fff;
       background-color: transparent;
       font-size: inherit;
       font-family: inherit;

@@ -18,7 +18,7 @@ const Footer = () => {
     >
       <div className="copyright">
         <p>
-          Copyright&copy;2023 All rights reserved.Made by{" "}
+          Copyright&copy;2023 All rights reserved. Made by{" "}
           <span>Kaan Karadag</span>
         </p>
       </div>
@@ -27,7 +27,16 @@ const Footer = () => {
         <div className="stick"></div>
         <div className="social_icons">
           {socialIcons.map((socialIcon, index) => {
-            return <div key={index}>{socialIcon}</div>;
+            return (
+              <a
+                key={index}
+                href={socialIcon.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {socialIcon.icon}
+              </a>
+            );
           })}
         </div>
       </div>
