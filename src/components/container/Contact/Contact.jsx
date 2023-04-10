@@ -54,7 +54,7 @@ const Contact = () => {
             have any questions or would like to discuss a project, please feel
             free to get in touch using the contact form. To get connected,
             simply fill out the form with a brief message about your project or
-            inquiry. I'll get back to you as soon as possible to discuss the
+            inquiry. I'll get back to you as soon as possible to discuss about the
             details.
           </p>
           {contacts.map((contact) => {
