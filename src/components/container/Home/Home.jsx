@@ -42,7 +42,7 @@ const Home = () => {
               <MeshDistortMaterial
                 color="#33c5ff"
                 attach="material"
-                distort={0.5}
+                distort={0.55}
                 speed={2}
               />
             </Sphere>
@@ -66,10 +66,10 @@ const Home = () => {
         >
           connect with me
         </motion.a>
-        <div className="fullstack">Full-Stack Developer</div>
-        <div className="ui">UI/UX Designer</div>
-        <div className="mecengineer">Mechanical Engineer</div>
-        <div className="freelancer">Freelancer</div>
+        <section className="fullstack">Full-Stack Developer</section>
+        <section className="ui">UI/UX Designer</section>
+        <section className="mecengineer">Mechanical Engineer</section>
+        <section className="freelancer">Freelancer</section>
       </div>
     </motion.div>
   );
