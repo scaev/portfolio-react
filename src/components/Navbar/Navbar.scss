@@ -77,13 +77,15 @@
   }
 
   .closeMenu {
-    background: #000;
-    width: 4rem;
-    height: 4rem;
+    // background: #000;
+    width: 0.45rem;
+    height: 0.83rem;
     position: fixed;
     right: 0;
     top: 0;
-    border-radius: 50%;
+    border-radius: 5%;
+    background: rgba(28, 28, 28, 0.85);
+    // backdrop-filter: blur(12px);
   }
   .menuX {
     color: #fff;
@@ -92,10 +94,12 @@
     left: 0;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items:last baseline;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 42vh;
+    padding-right: 2.2rem;
+
 
     svg {
       cursor: pointer;
