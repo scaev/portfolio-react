@@ -17,7 +17,7 @@
   
     .border_left {
       position: absolute;
-      width: 55vw;
+      width: 45vw;
       height: 55px;
     //   top: -200px;
       // top: 900px;
@@ -25,13 +25,13 @@
       mix-blend-mode: normal;
       filter: blur(50px);
       background-image: linear-gradient(rgb(88, 165, 255), rgb(166, 122, 244));
-      left: -140px;
+      left: -0;
       overflow: hidden;
       opacity: 0.15;
     }
     .border_right {
       position: absolute;
-      width: 55vw;
+      width: 45vw;
       height: 55px;
     //   top: -200px;
       // top: 900px;
