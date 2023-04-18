@@ -4,15 +4,12 @@ import portfolio2 from "../../../assets/portfolio2.png";
 import { bios } from "../../../Data";
 import { motion } from "framer-motion";
 import Resume from "../../../assets/Resume.pdf";
+import Light from "../Lights/Light";
 
 const About = () => {
   return (
     <>
-      <div className="lights">
-        <span className="line"></span>
-        <span className="border_left"></span>
-        <span className="border_right"></span>
-      </div>
+      <Light />
       <div className="container" id="about">
         <motion.div
           className="title"

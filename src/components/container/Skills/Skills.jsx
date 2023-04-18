@@ -4,11 +4,15 @@ import { icons } from "../../../Data";
 import { experiences } from "../../../Data";
 import { finishes } from "../../../Data";
 import { motion } from "framer-motion";
+import Light from "../Lights/Light";
+
 
 const Skills = () => {
   const [active, setActive] = useState(1);
 
   return (
+    <>
+      <Light />
     <div className="container" id="skills">
       <motion.div
         className="title"
@@ -89,7 +93,7 @@ const Skills = () => {
           })}
       </motion.div>
     </div>
-  );
+    </>);
 };
 
 export default Skills;

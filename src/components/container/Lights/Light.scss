@@ -1,0 +1,46 @@
+.lights {
+    position: relative;
+    .line {
+      width: 100%;
+      background-image: linear-gradient(
+        90deg,
+        rgb(40, 140, 249),
+        rgb(227, 44, 107)
+      );
+      height: 1px;
+      left: 0;
+      // top: 0;
+      // margin-top: 73px;
+      position: absolute;
+      opacity: 0.25;
+    }
+  
+    .border_left {
+      position: absolute;
+      width: 55vw;
+      height: 55px;
+    //   top: -200px;
+      // top: 900px;
+      border-radius: 100%;
+      mix-blend-mode: normal;
+      filter: blur(50px);
+      background-image: linear-gradient(rgb(88, 165, 255), rgb(166, 122, 244));
+      left: -140px;
+      overflow: hidden;
+      opacity: 0.15;
+    }
+    .border_right {
+      position: absolute;
+      width: 55vw;
+      height: 55px;
+    //   top: -200px;
+      // top: 900px;
+      border-radius: 100%;
+      mix-blend-mode: normal;
+      filter: blur(50px);
+      background-image: linear-gradient(rgb(255, 51, 88), rgb(255, 79, 216));
+      right: 0;
+      overflow: hidden;
+      opacity: 0.15;
+    }
+  }
