@@ -34,6 +34,7 @@ import work3 from "./assets/work3.png";
 import work4 from "./assets/work4.png";
 import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.png";
+import work7 from "./assets/work7.png";
 
 export const navLinks = ["home", "about", "skills", "projects", "contact"];
 
@@ -256,5 +257,13 @@ export const workImages = [
     category: "design",
     github: "https://github.com/scaev/Slot-Machine",
     deployed: "https://scaev.github.io/Slot-Machine/",
+  },
+  {
+    id: 7,
+    img: work7,
+    name: "myYoutube",
+    category: "design",
+    github: "https://github.com/scaev/my_youtube",
+    deployed: "https://scaev.github.io/my_youtube/",
   },
 ];
