@@ -35,6 +35,7 @@ import work4 from "./assets/work4.png";
 import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.png";
 import work7 from "./assets/work7.png";
+import work8 from "./assets/work8.png";
 
 export const navLinks = ["home", "about", "skills", "projects", "contact"];
 
@@ -265,5 +266,13 @@ export const workImages = [
     category: "design",
     github: "https://github.com/scaev/my_youtube",
     deployed: "https://scaev.github.io/my_youtube/",
+  },
+  {
+    id: 8,
+    img: work8,
+    name: "ts_particles",
+    category: "design",
+    github: "https://github.com/scaev/ts_particles",
+    deployed: "https://scaev.github.io/ts_particles/",
   },
 ];
