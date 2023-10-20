@@ -36,6 +36,7 @@ import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.png";
 import work7 from "./assets/work7.png";
 import work8 from "./assets/work8.png";
+import work9 from "./assets/work9.png";
 
 export const navLinks = ["home", "about", "skills", "projects", "contact"];
 
@@ -274,5 +275,13 @@ export const workImages = [
     category: "design",
     github: "https://github.com/scaev/ts_particles",
     deployed: "https://scaev.github.io/ts_particles/",
+  },
+  {
+    id: 9,
+    img: work9,
+    name: "colive",
+    category: "app",
+    github: "https://github.com/scaev/airbnb_clone",
+    deployed: "https://colive.vercel.app",
   },
 ];
